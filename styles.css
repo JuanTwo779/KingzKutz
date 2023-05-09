@@ -39,12 +39,20 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+
     display: flex;
     align-items: center;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none; 
     font-size: 2rem;
+    font-family: fantasy;
 }
+
+#navbar__logo img {
+    height: 80px;
+    filter: invert(18%) sepia(11%) saturate(7313%) hue-rotate(227deg) brightness(92%) contrast(99%);
+}
+
 
 .navbar__menu {
     display: flex;
@@ -199,9 +207,9 @@
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
     padding: 200px 0;
-    background-image: url(media/image1.jpg);
+    /* background-image: url(media/image2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .hero__container {
@@ -214,6 +222,14 @@
     height: 90%;
     text-align: center;
     padding: 30px;
+}
+
+.hero__container img {
+
+    max-width: 100%;
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
 }
 
 .hero__heading {
