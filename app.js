@@ -37,7 +37,7 @@ const highlightMenu = () => {
         return;
     } //need to add highlight to new divs
 
-    if((elem && window.innerWidth < 960 && scrollPos < 600) || elem){
+    if((elem && window.innerWidth < 1100 && scrollPos < 600) || elem){
         elem.classList.remove('highlight');
     }
 
@@ -49,7 +49,7 @@ window.addEventListener('click', highlightMenu);
 //close mobile menu when menu item clicked
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active');
-    if (window.innerWidth <= 960 && menuBars) {
+    if (window.innerWidth <= 1100 && menuBars) {
       menu.classList.toggle('is-active');
       menuLinks.classList.remove('active');
     }
