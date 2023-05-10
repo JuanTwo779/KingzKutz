@@ -108,7 +108,7 @@
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1100px){
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -137,7 +137,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 60vh;
+        height: 80vh;
         font-size: 1.6rem;
     }
 
@@ -165,7 +165,7 @@
     }
 
     .navbar__btn{
-        padding-bottom: 2rem;
+        padding: 1rem 0 2rem;
     }
 
     .button{
@@ -208,7 +208,7 @@
 .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
-    padding: 150px 0;
+    padding: 100px 0 150px;
     /* background-image: url(media/image2.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -282,7 +282,7 @@ background: linear-gradient(to right, #fff, #AA076B); /* W3C, IE 10+/ Edge, Fire
 
 
 
-/* About section */
+/* About section (Used for booking section) */
 .main {
     background-color: #131313;
     padding: 10rem 0;
@@ -594,7 +594,9 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     }
 }
 
+/* Rules Section */
 
+/* Hours Section */
 
 /* Footer Section */
 .footer__container {
