@@ -413,7 +413,7 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 }
 
 /* Mobile responsive */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
     .main__container {
         display: grid;
         grid-template-columns: 1fr;
@@ -598,41 +598,24 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
 .rules {
     background-color: #131313;
     padding: 10rem;
-}
-
-.rules__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
-    z-index: 1;
-    width: 100%;
-    max-width: 1500px;
-    padding: 0 50px;
-}
-
-.rules__content {
     color: #fff;
-    width: 100%;
+}
+
+.rules__vid--container {
+    overflow: hidden;
+    display: block;
+    height: 95%;
+}
+
+#rules__vid {
+    /* width: 75%;
+    height: 75%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .topline {
-    color: rgb(132, 0, 255);
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.rules__heading {
-    margin-bottom: 1rem;
-    font-size: clamp(2rem, 6vw, 3rem);
-}
-
-.rules__sub {
-    margin: 1.5rem 0 1rem;
-
     background: #BF953F;
     background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
     background:linear-gradient(to right, #BF953F, #eee477, #B38728, #AA771C);
@@ -641,6 +624,25 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.rules__heading {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    color: #fff;
+}
+
+.rules__sub {
+    color: #BF953F;
+    margin: 1.5rem 0 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    letter-spacing: 3px;
 }
 
 .rules__features {
@@ -648,8 +650,8 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
 }
 
 .rules__list {
-    margin-left: 1rem;
-    margin-bottom: 1.5rem;
+    color: #fff;
+    margin: 2rem 1.5rem;
     font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
@@ -658,14 +660,86 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     color: #362971;
 }
 
-.rules__img--container {
-    margin: 10px;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
+.rules__notes {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 2rem 50px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+@media screen and (max-width: 1300px) {
+    .rules__wrapper {
+        text-align: center;
+    }    
+
+    .topline {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .rules__heading {
+        font-size: 2rem;
+    }
+
+    .rules__list {
+        font-size: 0.75rem;
+    }
+
+    .rules__notes {
+        text-align: center;
+    }
+
+    .rules__notes h2 {
+        font-size: 0.75rem;
+    }
+
+    .rules__notes p{
+        font-size: 0.5rem;
+    }
+
+    .rules__vid {
+        height: 50%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rules__wrapper {
+        text-align: center;
+    }    
+
+    .topline {
+        font-size: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .rules__heading {
+        font-size: 1.5rem;
+    }
+
+    .rules__list {
+        font-size: 0.55rem;
+    }
+
+    .rules__notes {
+        text-align: center;
+    }
+
+    .rules__notes h2 {
+        font-size: 0.55rem;
+    }
+
+    .rules__notes p{
+        font-size: 0.35rem;
+    }
+
+    .rules__vid {
+        height: 25%;
+        width: 25%;
+    }
 }
 
 /* Hours Section */
