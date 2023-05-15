@@ -31,7 +31,7 @@
 
 #navbar__logo {
     background: #396afc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /*Chrome 10-25, Safari 5.1-6*/
     background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: 100%;
@@ -50,7 +50,7 @@
 
 #navbar__logo img {
     height: 75px;
-    filter: invert(18%) sepia(11%) saturate(7313%) hue-rotate(227deg) brightness(92%) contrast(99%);
+    filter: invert(12%) sepia(59%) saturate(5495%) hue-rotate(256deg) brightness(97%) contrast(86%);
 }
 
 
@@ -95,16 +95,23 @@
     outline: none;
     border-radius: 4px;
 
-    background: rgb(132, 0, 255);  /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #3c1053, #ad5389); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #673AB7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #3a6186;
+    /* color: #BF953F; */
+    background: #BF953F;
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background:linear-gradient(to right, #BF953F, #eee477, #B38728, #AA771C);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     transition: all 0.3s ease;
 }
 
@@ -241,10 +248,11 @@
 }
 
 .hero__heading span {
-    background: #AA076B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fff, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fff, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #AA076B;  
+background: -webkit-linear-gradient(to right, #fff, #AA076B);  
+background: linear-gradient(to right, #fff, #AA076B); */
 
+    background: white;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -254,11 +262,11 @@ background: linear-gradient(to right, #fff, #AA076B); /* W3C, IE 10+/ Edge, Fire
 
 .hero__description {
     font-size: 60px;
-    background: #A770EF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #BF953F;
+    background: -webkit-linear-gradient(to right, #BF953F, #eee477, #B38728, #AA771C);  /* Chrome 10-25, Safari 5.1-6 */
+    background:linear-gradient(to right, #BF953F, #eee477, #B38728, #AA771C);
     background-size: 100%;
+
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -280,12 +288,23 @@ background: linear-gradient(to right, #fff, #AA076B); /* W3C, IE 10+/ Edge, Fire
     }
 }
 
+@media screen and (max-width: 480px) {
+    .hero__heading {
+        font-size: 40px;
+    }
+
+    .hero__description {
+        font-size: 20px;
+    }
+}
+
 
 
 /* About section (Used for booking section) */
 .main {
-    background-color: #131313;
+    background-color: #252525;
     padding: 10rem 0;
+    color: #fff;
 }
 
 .main__container {
@@ -334,8 +353,8 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 
 .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .main__btn {
@@ -389,15 +408,13 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 }
 
 .main__img--card {
-    margin: 10px;
-    height: 500px;
+    margin-bottom: 2rem;
+    height: 100%;
     width: 500px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #ffffff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .fa-layer-group,
@@ -449,7 +466,7 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
     }
     
     .main__content p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 1rem;
     }
 }
@@ -466,7 +483,7 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 
     .main__content h1 {
         font-size: 2rem;
-        margin-top: 3rem;
+        margin: 1rem 0 1rem;
     }
 
     .main__content h2 {
@@ -474,7 +491,9 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
     }
     
     .main__content p {
-        margin-top: 2rem;
+        /* width: 100%; */
+        font-size: 0.7rem;
+        margin-top: 0.2rem;
     }
 
     .main__btn {
@@ -601,11 +620,11 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     color: #fff;
 }
 
-.rules__vid--container {
+/* .rules__vid--container {
     overflow: hidden;
     display: block;
     height: 95%;
-}
+} */
 
 #rules__vid {
     /* width: 75%;
@@ -617,7 +636,7 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
 
 .topline {
     background: #BF953F;
-    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #BF953F, #eee477, #B38728, #AA771C);  /* Chrome 10-25, Safari 5.1-6 */
     background:linear-gradient(to right, #BF953F, #eee477, #B38728, #AA771C);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -630,12 +649,6 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     letter-spacing: 3px;
 }
 
-.rules__heading {
-    margin-bottom: 1rem;
-    font-size: 40px;
-    color: #fff;
-}
-
 .rules__sub {
     color: #BF953F;
     margin: 1.5rem 0 1rem;
@@ -645,19 +658,15 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     letter-spacing: 3px;
 }
 
-.rules__features {
-    list-style: none;
-}
-
-.rules__list {
-    color: #fff;
-    margin: 2rem 1.5rem;
-    font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
-.fa-check-circle {
+.fa-check-circle, .fa-scissors {
     margin-right: 0.5rem;
-    color: #362971;
+    color: #fff;
+}
+
+
+
+.rules__item {
+    padding: 1rem 2rem;
 }
 
 .rules__notes {
@@ -671,76 +680,46 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
 }
 
 @media screen and (max-width: 1300px) {
-    .rules__wrapper {
-        text-align: center;
-    }    
-
     .topline {
         font-size: 1rem;
-        margin-top: 2rem;
     }
 
-    .rules__heading {
-        font-size: 2rem;
+    #rules__vid {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        width: 60%;
     }
-
-    .rules__list {
-        font-size: 0.75rem;
-    }
-
+    
     .rules__notes {
-        text-align: center;
-    }
-
-    .rules__notes h2 {
-        font-size: 0.75rem;
-    }
-
-    .rules__notes p{
-        font-size: 0.5rem;
-    }
-
-    .rules__vid {
-        height: 50%;
-        width: 50%;
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .rules__wrapper {
-        text-align: center;
-    }    
-
     .topline {
         font-size: 0.5rem;
-        margin-top: 1.5rem;
     }
 
-    .rules__heading {
-        font-size: 1.5rem;
-    }
+    /* .rules__item {
+        font-size: 20px;
+        margin: 0;
+    } */
 
-    .rules__list {
-        font-size: 0.55rem;
+    #rules__vid {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
     }
 
     .rules__notes {
-        text-align: center;
-    }
-
-    .rules__notes h2 {
-        font-size: 0.55rem;
-    }
-
-    .rules__notes p{
-        font-size: 0.35rem;
-    }
-
-    .rules__vid {
-        height: 25%;
-        width: 25%;
+        width: 100%;
+        font-size: 15px;
     }
 }
+
+
 
 /* Hours Section */
 
