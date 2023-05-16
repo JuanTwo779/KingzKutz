@@ -1,3 +1,9 @@
+:root {
+    --purple1: #362971;
+    --purple2: #423481;
+    --gold: #BF953F;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,13 +12,21 @@
     scroll-behavior: smooth;
 }
 
+#bar {
+    clear: both;
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    width: 70%;
+}
+
 .navbar {
     background: #131313;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -49,8 +63,11 @@
 }
 
 #navbar__logo img {
-    height: 75px;
-    filter: invert(12%) sepia(59%) saturate(5495%) hue-rotate(256deg) brightness(97%) contrast(86%);
+    height: 70px;
+    /* filter: invert(12%) sepia(59%) saturate(5495%) hue-rotate(256deg) brightness(97%) contrast(86%); */
+    /* filter: invert(19%) sepia(15%) saturate(7019%) hue-rotate(232deg) brightness(94%) contrast(89%); */
+    /* filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(27deg) brightness(108%) contrast(104%); */
+    color: white;
 }
 
 
@@ -69,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 100px;
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
@@ -93,11 +110,12 @@
     width: 100%;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 20px;
 
-    background: #673AB7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #673AB7;  
+    background: -webkit-linear-gradient(to right, #512DA8, #423481);  
+    background: linear-gradient(to right, #512DA8, #423481); 
+
     color: #fff;
     transition: all 0.3s ease;
 }
@@ -115,7 +133,7 @@
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 900px){
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -213,8 +231,8 @@
 
 /* Hero Section */
 .hero {
-    background: #000000;
-    background: linear-gradient(to right, #161616, #000000);
+    background: #161616;
+    /* background: linear-gradient(to right, #161616, #000000); */
     padding: 100px 0 150px;
     /* background-image: url(media/image2.jpg);
     background-repeat: no-repeat;
@@ -275,7 +293,7 @@ background: linear-gradient(to right, #fff, #AA076B); */
 
 /* HIGHLIGHT */
 .highlight {
-    border-bottom: 4px solid rgb(132, 0, 255);
+    border-bottom: 4px solid #423481;
 }
 
 @media screen and (max-width: 768px) {
@@ -326,10 +344,11 @@ background: linear-gradient(to right, #fff, #AA076B); */
 }
 
 .main__content h1 {
-    font-size: 2rem;
-    background: #f953c6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 3rem;
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     background-size: 100%;
     -webkit-background-clip: text;
@@ -340,9 +359,11 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 
 .main__content h2 {
     font-size: 4rem;
-    background: #A770EF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     background-size: 100%;
     -webkit-background-clip: text;
@@ -353,25 +374,26 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 
 .main__content p {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .main__btn {
-    font-size: 1.8rem;
+    font-size: 1rem;
 
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
+    /* background: #ad5389; 
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  
+    background: linear-gradient(to right, #3c1053, #ad5389);  */
+
+    background: none;
+    border: 2px solid white;    
     padding: 20px 60px;
-    border: none;
-    border-radius: 4px;
+    /* border: none; */
+    border-radius: 20px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.35s;
+    transition: all 0.3s;
     outline: none;
 }
 
@@ -390,13 +412,17 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
     left: 0;
     height: 100%;
     /* button hover colour change */
-    background: #ff1ead; 
-    transition: all 0.35s;
-    border-radius: 4px;   
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    /* speed */
+    transition: all 2s; 
+    border-radius: 20px;   
 }
 
 .main__btn:hover {
-    color: #fff;
+    color: white;
 }
 
 .main__btn:hover:after {
@@ -409,7 +435,7 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 
 .main__img--card {
     margin-bottom: 2rem;
-    height: 100%;
+    height: auto;
     width: 500px;
     border-radius: 4px;
     display: flex;
@@ -620,12 +646,6 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     color: #fff;
 }
 
-/* .rules__vid--container {
-    overflow: hidden;
-    display: block;
-    height: 95%;
-} */
-
 #rules__vid {
     /* width: 75%;
     height: 75%; */
@@ -633,6 +653,7 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .topline {
     background: #BF953F;
@@ -645,8 +666,9 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-    font-size: 15px;
+    font-size: 8px;
     letter-spacing: 3px;
+    padding: 1.5rem 0;
 }
 
 .rules__sub {
@@ -663,7 +685,9 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     color: #fff;
 }
 
-
+.rules__list {
+    padding-top: 1rem;
+}
 
 .rules__item {
     padding: 1rem 2rem;
@@ -690,7 +714,7 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
         justify-content: center;
         width: 60%;
     }
-    
+
     .rules__notes {
         width: 70%;
     }
