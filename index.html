@@ -107,11 +107,13 @@
     <!-- Rules section -->
     <div class="main" id="rules">
         <div class="main__container">
-                <div class="main__content">
-                    <p class="topline">2023 Rules</p>
+            
+                <div class="main__content" id="rules__card">
+                    <!-- <p class="topline">2023 Rules</p> -->
                     <h1 id="rules__heading">Rules & Regulations</h1>
+                    <h2 id="rules__heading2">New to 2023</h2>
                     
-                    <div class="rules__list">
+                    <div class="rules__card">
                         <p class="rules__item"><i class="fa-solid fa-scissors"></i>Know what you want</p>
                         <p class="rules__item"><i class="fa-solid fa-scissors"></i>Come with clean hair</p>
     
@@ -124,9 +126,12 @@
 
                 </div>  
 
+                <!-- height: 425px;
+                width: 300px; -->
+
             <!-- Maybe find way to crop mp4 -->
             <div class="rules__vid--container">
-                <video controls loop width="80%" height="80%" id="rules__vid" alt="Rules">
+                <video autoplay muted loop width="80%" height="425" width="500" id="rules__vid" alt="Rules">
                     <source src="/media/rules.mp4" type="video/mp4">
                     Your browser does not support video file.
                 </video>
