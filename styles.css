@@ -122,9 +122,7 @@
 
 .navbar__links:hover {
     /* color: #BF953F; */
-    background: #BF953F;
-    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
-    background:linear-gradient(to right, #BF953F, #eee477, #B38728, #AA771C);
+    background: #f953c6;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -292,7 +290,7 @@ background: linear-gradient(to right, #fff, #AA076B); */
 
 /* HIGHLIGHT */
 .highlight {
-    border-bottom: 4px solid #423481;
+    border-bottom: 4px solid #f953c6;
 }
 
 @media screen and (max-width: 768px) {
@@ -658,8 +656,7 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
 } */
 
 #rules__vid {
-    /* margin-top: ; */
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -683,8 +680,20 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     padding: 1.5rem 0;
 }
 
+#rules__heading {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 #rules__heading, #rules__heading2 {
-    margin-bottom: 0.5rem;
     justify-content: center;
     text-align: center;
 }
@@ -735,7 +744,7 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
     }
 
     #rules__card {
-        width: auto;
+        width: 480px;
         margin: auto;
     }
 
