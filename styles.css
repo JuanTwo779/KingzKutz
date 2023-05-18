@@ -2,6 +2,9 @@
     --purple1: #362971;
     --purple2: #423481;
     --gold: #BF953F;
+    --nav: #000c19;
+    --main: #0e182a;
+    --hero: #1b243b;
 }
 
 *{
@@ -383,15 +386,16 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
     background: linear-gradient(to right, #3c1053, #ad5389);  */
 
     background: none;
-    border: 2px solid white;    
+    border: 0.5px solid white;    
     padding: 20px 60px;
     /* border: none; */
     border-radius: 20px;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.3s;
+    transition: all 1s;
     outline: none;
+    color: white;
 }
 
 .main__btn a {
@@ -414,7 +418,7 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
     background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     /* speed */
-    transition: all 2s; 
+    transition: all 0.5s; 
     border-radius: 20px;   
 }
 
@@ -431,7 +435,7 @@ background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, F
 }
 
 .main__img--card {
-    box-shadow: var(--purple2) 0px 7px 29px 0px;
+    /* box-shadow: var(--purple2) 0px 7px 29px 0px; */
     margin-bottom: 2rem;
     height: auto;
     width: 400px;
@@ -715,9 +719,9 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
 
 #rules__card{
     border-radius: 10px;
-    /* width: auto; */
     padding: 1rem;
-    box-shadow: var(--purple1) 0px 7px 29px 0px;
+    /* box-shadow: var(--purple1) 0px 7px 29px 0px; */
+    box-shadow: var(--nav) 0px 10px 50px;
     background-color: #1b243b;
 }
 
@@ -904,5 +908,134 @@ background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+
         margin: 0;
         padding: 10px;
         width: 100%;
+    }
+}
+
+/* features */
+#feature {
+    background-color: var(--hero);
+    width: 100%;
+    padding: 10rem 0;
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color: var(--gold);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text h1 {
+    font-size: 50px;
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.feature__box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.feature {
+    flex-basis: 50%;
+}
+
+.feature__img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+/* .feature__img img{
+    width: 70%;
+    border-radius: 10px;
+} */
+
+.feature__img vid{
+    width: 100%;
+} 
+
+.feature h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: #f953c6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.feature__desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature__icon .fa-solid{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #f953c6;
+    border: 1px solid #f953c6;
+}
+
+.feature__text p {
+    padding: 0 20px;
+    text-align: initial;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .title-text h1 {
+        font-size: 40px;
+    }
+
+    .feature{
+        flex-basis: 100%;
+    }
+
+    .feature__img{
+        flex-basis: 100%;
+    }
+
+    .feature__img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-text h1 {
+        font-size: 35px;
+    }
+
+    .feature h1 {
+        font-size: 25px;
+    }
+
+    .feature p {
+        font-size: 15px;
     }
 }
