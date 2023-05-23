@@ -43,7 +43,7 @@ const highlightMenu = () => {
         return;
     } else if (window.innerWidth > 900 && scrollPos < 5500){ //hours
         hoursMenu.classList.add('highlight');
-        rulesMenu.classList.remove('higlight');
+        rulesMenu.classList.remove('highlight');
         return;
     }
 
