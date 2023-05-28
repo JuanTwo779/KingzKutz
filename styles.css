@@ -33,6 +33,9 @@
 
     /* title fonts */
     --fontFamTitle: 'Times New Roman', Times, serif;
+
+    /* Page spacing */
+    --pageSpace: 8rem;
 }
 
 *{
@@ -245,14 +248,14 @@
 /* Hero Section */
 .hero {
     background: var(--main);
-    padding: 150px 0 150px;
+    /* padding: 150px 0 150px; */
+    padding: var(--pageSpace) 0;
 
     background: linear-gradient(rgb(0,0,0,0.5), var(--main)), 
                 url(media/background/zoro2.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 90vh;
-    
 }
 
 
@@ -274,7 +277,7 @@
     height: auto;
     width: auto;
     margin: 10px;
-    filter:saturate(70%);
+    /* filter:saturate(70%); */
     /* opacity: 70%; */
 }
 
@@ -317,18 +320,22 @@
     padding: 30px;
 }
 
+
+/* Buttons */
 .button {
     text-decoration: none;
     color: var(--text);
+    height: 40px;
     padding: 20px 35px;
     border-radius: 8px;
     font-size: 20px;
     transition: all 0.3s ease-in-out;
-    margin: 1rem;
+    margin-top: 50px;
 }
 
 .primary__btn {
     background: var(--primary);
+    
 }
 
 .secondary__btn {
@@ -379,10 +386,10 @@
 
 
 
-/* About section (also used for booking section) */
+/* Main content */
 .main {
     background-color: var(--main);
-    padding: 10rem 0;
+    padding: var(--pageSpace) 0;
     color: var(--text);
 }
 
@@ -402,6 +409,7 @@
 .main__content {
     color: var(--text);
     width: 100%;
+    padding: 0 30px 0 25px;
 }
 
 .main__content h1 {
@@ -422,68 +430,15 @@ hr {
 }
 
 .main__content h2 {
-    font-size: 1.5rem;
+    font-size: var(--fontSizeP);
     color: var(--secondary);
+    font-style: italic;
 }
 
 .main__content p {
-    margin: 2rem 0;
+    margin: 1rem 0;
     font-size: var(--fontSizeP);
     /* font-weight: 600; */
-}
-
-.main__btn {
-    font-size: 1rem;
-
-    /* background: #ad5389; 
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  
-    background: linear-gradient(to right, #3c1053, #ad5389);  */
-
-    background: none;
-    border: 0.5px solid white;    
-
-    padding: 20px 60px;
-    /* border: none; */
-    border-radius: 20px;
-    /* margin-top: 2rem; */
-    margin: 1rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 1s;
-    outline: none;
-    color: white;
-}
-
-.main__btn a {
-    position: relative;
-    z-index: 2;
-    color: var(--text);
-    text-decoration: none;
-}
-
-.main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    width: 0;
-    left: 0;
-    height: 100%;
-    /* button hover colour change */
-    background: #9D50BB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    /* speed */
-    transition: all 0.5s; 
-    border-radius: 20px;   
-}
-
-.main__btn:hover {
-    color: white;
-}
-
-.main__btn:hover:after {
-    width: 100%;
 }
 
 .main__img--container {
@@ -507,19 +462,6 @@ hr {
 .main__img--card img {
     border-radius: var(--borderRad);
     width: 400px;
-}
-
-.fa-layer-group,
-.fa-bookmark
-{
-    font-size: 14rem;
-}
-
-/* Replace with image (booking) */
-#card-2 {
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #000046, #1CB5E0);
-    background: linear-gradient(to right, #000046, #1CB5E0);
 }
 
 /* Mobile responsive */
@@ -606,8 +548,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem 0;
-    
+    padding: var(--pageSpace) 0;
 }
 
 
@@ -647,7 +588,7 @@ hr {
     height: 300px;
     width: 100%;
     border-radius: 8px;
-    /* filter: brightness(70%); */
+    filter: brightness(70%);
     /* border-radius: 8px; */
 }
 
@@ -707,8 +648,6 @@ hr {
     transition: 0.3s ease-in;
 }
 
-
-
 .services__card:hover{
     /* transform: scale(1.075); */
     transition: 0.3s ease-in;
@@ -735,13 +674,12 @@ hr {
 #rules {
     background-color: var(--main);
     width: 100%;
-    padding: 10rem 0;
+    padding: var(--pageSpace) 0;
 }
 
 .rules__title{
     text-align: center;
-    padding: 0 50px 70px;
-    /* padding-bottom: 70px; */
+    padding: 0 50px 20px;
     max-width: auto;
 
 }
@@ -856,16 +794,11 @@ hr {
 .hours__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* width: auto; */
 }
 
 .hours__week {
     font-weight: bold;
 
-}
-
-.hours__content p {
-    /* margin: 2rem 0 0; */
 }
 
 .hours__info {
@@ -904,10 +837,87 @@ hr {
 }
 
 
+/* Booking Section */
+#booking {
+    padding: var(--pageSpace) 0 12rem;
+}
+
+#booking__DM span {
+    font-weight: bolder;
+
+    background: var(--text);  
+    background: -webkit-linear-gradient(to right, #515BD4, #8134AF, #DD2A7B, #F58529);  
+    background: linear-gradient(to right, #515BD4, #8134AF, #DD2A7B, #F58529);
+
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.booking__btn--container {
+    padding-top: 20px;
+}
+
+.booking__img--container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    /* background: green; */
+}
+
+.booking__img--card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking__img--card:hover {
+    transform: rotateY(180deg);
+    transition: all 0.5s ease;
+}
+
+#royalty {
+    max-width: 500px;
+}
+
+.royalty__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background: #ffc728; */
+    /* color: #333; */
+    box-shadow: var(--primary) 0px 20px 80px -10px;
+}
+
+.royalty__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background: #fafafa; */
+    /* color: #333; */
+    transform: rotateY(180deg);
+    box-shadow: var(--accent) 0px 20px 80px -10px;
+}
+
+
+
+
 /* Footer Section */
 .footer__container {
     background-color: var(--nav);
-    padding: 5rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1027,4 +1037,4 @@ hr {
     }
 }
 
-/* rules */
+
