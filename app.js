@@ -22,26 +22,26 @@ const highlightMenu = () => {
     console.log(scrollPos);
 
     //adds 'highlight' class to my menu items
-    if(window.innerWidth > 900 && scrollPos < 900) { //home
+    if(window.innerWidth > 900 && scrollPos < 700) { //home
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 1700) { //about
+    } else if (window.innerWidth > 900 && scrollPos < 1500) { //about
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         serviceMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 3300) { //services
+    } else if (window.innerWidth > 900 && scrollPos < 2650) { //services
         serviceMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         rulesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 4400) { //rules
+    } else if (window.innerWidth > 900 && scrollPos < 3650) { //rules
         rulesMenu.classList.add('highlight');
         serviceMenu.classList.remove('highlight');
         hoursMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 5500){ //hours
+    } else if (window.innerWidth > 900 && scrollPos < 4400){ //hours
         hoursMenu.classList.add('highlight');
         rulesMenu.classList.remove('highlight');
         return;
@@ -67,3 +67,5 @@ const hideMobileMenu = () => {
   
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+
