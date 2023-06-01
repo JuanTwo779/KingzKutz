@@ -22,32 +22,32 @@ const highlightMenu = () => {
     console.log(scrollPos);
 
     //adds 'highlight' class to my menu items
-    if(window.innerWidth > 900 && scrollPos < 700) { //home
+    if(window.innerWidth > 1000 && scrollPos < 700) { //home
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 1500) { //about
+    } else if (window.innerWidth > 1000 && scrollPos < 1500) { //about
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         serviceMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 2650) { //services
+    } else if (window.innerWidth > 1000 && scrollPos < 2650) { //services
         serviceMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         rulesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 3650) { //rules
+    } else if (window.innerWidth > 1000 && scrollPos < 3650) { //rules
         rulesMenu.classList.add('highlight');
         serviceMenu.classList.remove('highlight');
         hoursMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 900 && scrollPos < 4400){ //hours
+    } else if (window.innerWidth > 1000 && scrollPos < 4400){ //hours
         hoursMenu.classList.add('highlight');
         rulesMenu.classList.remove('highlight');
         return;
     }
 
-    if((elem && window.innerWidth < 900 && scrollPos < 600) || elem){
+    if((elem && window.innerWidth < 1000 && scrollPos < 600) || elem){
         elem.classList.remove('highlight');
     }
 
@@ -59,7 +59,7 @@ window.addEventListener('click', highlightMenu);
 //close mobile menu when menu item clicked
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active');
-    if (window.innerWidth <= 900 && menuBars) {
+    if (window.innerWidth <= 1000 && menuBars) {
       menu.classList.toggle('is-active');
       menuLinks.classList.remove('active');
     }
