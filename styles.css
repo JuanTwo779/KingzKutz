@@ -270,17 +270,15 @@
     height: 100%;
     text-align: center;
     padding: 50px;
+    box-sizing: border-box;
 }
 
 .hero__container img {
-    max-width: 275px;
-    max-width: 275px;
+    max-width: 300px;
+    max-width: 300px;
     height: auto;
     width: auto;
     margin: 10px;
-    /* filter:saturate(70%); */
-    /* filter: contrast(0%); */
-    /* opacity: 80%; */
 }
 
 .hero__heading {
@@ -307,7 +305,7 @@
 .hero__description {
     font-size: var(--heroDesc);
     color: var(--text);
-    font-family: var(--fontFamTitle);
+    /* font-family: var(--fontFamTitle); */
     font-style: italic;
 }
 
@@ -316,10 +314,11 @@
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
     height: 90%;
     text-align: center;
-    padding: 30px;
+    /* padding: 0; */
+    background: transparent;
 }
 
 
@@ -327,13 +326,12 @@
 .button {
     text-decoration: none;
     color: var(--text);
-    height: 40px;
+    /* height: 40px; */
     padding: 20px 35px;
     border-radius: 8px;
     font-size: 20px;
-    font-weight: bold;
     transition: all 0.3s ease-in-out;
-    margin-top: 50px;
+    margin: 10px;
 }
 
 .primary__btn {
@@ -1040,4 +1038,75 @@ hr {
     }
 }
 
+/* BUTTON Re-design */
+.hero__btn--container a {
+    position: relative;
+    background:white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
 
+.hero__btn--container a:hover {
+    background: var(--accent);
+    color: var(--accent);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--accent);
+}
+
+.hero__btn--container a::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--main);
+}
+
+.hero__btn--container a span {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__btn--container a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.hero__btn--container a i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: var(--main);
+    transform: translateX(-50%)skewX(325deg);
+    transition: 0.5s;
+}
+
+.hero__btn--container a:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.hero__btn--container a i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: var(--main);
+    transform: translateX(-50%)skewX(325deg);
+    transition: 0.5s;
+}
+
+.hero__btn--container a:hover i::after {
+    width: 20px;
+    left: 80%;
+}
