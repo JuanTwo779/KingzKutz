@@ -1,3 +1,3 @@
 # KingzKutz
 
-Website for Kinz Kutz 
+Website for Kingz Kutz 

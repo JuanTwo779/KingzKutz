@@ -26,22 +26,22 @@ const highlightMenu = () => {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1000 && scrollPos < 1500) { //about
+    } else if (window.innerWidth > 1000 && scrollPos < 1400) { //about
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         serviceMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1000 && scrollPos < 2650) { //services
+    } else if (window.innerWidth > 1000 && scrollPos < 2450) { //services
         serviceMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         rulesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1000 && scrollPos < 3650) { //rules
+    } else if (window.innerWidth > 1000 && scrollPos < 3350) { //rules
         rulesMenu.classList.add('highlight');
         serviceMenu.classList.remove('highlight');
         hoursMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1000 && scrollPos < 4400){ //hours
+    } else if (window.innerWidth > 1000 && scrollPos < 4200){ //hours
         hoursMenu.classList.add('highlight');
         rulesMenu.classList.remove('highlight');
         return;

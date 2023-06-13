@@ -751,8 +751,8 @@ hr {
     font-size: 30px;
     line-height: 50px;
     border-radius: 8px;
-    color: var(--accent);
-    border: 1px solid var(--accent);
+    color: var(--primary);
+    border: 2px solid var(--primary);
     /* color: #f953c6;
     border: 1px solid #f953c6; */
 }
@@ -1069,10 +1069,10 @@ hr {
 }
 
 .hero__btn--container a:hover {
-    background: var(--accent);
-    color: var(--accent);
+    background: var(--primary);
+    color: var(--text);
     letter-spacing: 0.25em;
-    box-shadow: 0 0 35px var(--accent);
+    box-shadow: 0 0 35px var(--primary);
 }
 
 .hero__btn--container a::before {
