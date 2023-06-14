@@ -807,13 +807,33 @@ hr {
 
 /* Hours Section */
 .hours__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontSizeP); */
+
+    font-size: var(--fontSizeP);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-height: calc(89% - 00.8rem);
+    margin: 0.8rem auto;
+    overflow: auto;
 }
 
-.hours__week {
-    font-weight: bold;
+table, td {
+    text-align: left;
+    padding: 1rem 0;
+}
 
+table {
+    width: 100%;
 }
 
 .hours__info {
@@ -827,10 +847,16 @@ hr {
 .hours__info p{
     font-style: italic;
     width: 400px;
+    font-size: smaller;
     
 }
 
 @media screen and (max-width: 1000px) {
+
+    table, th, td {
+        text-align: center;
+    }
+
     .hours__content{
         margin: 2rem 2rem 0;
     }
@@ -843,14 +869,6 @@ hr {
 @media screen and (max-width: 480px) { 
     .hours__content{
         margin:0;
-    }
-
-    .hours__time {
-        margin: 0;
-    }
-
-    .hours__week {
-        margin: 0;
     }
 
     .hours__info p{
@@ -889,7 +907,6 @@ hr {
     height: 300px;
     text-align: center;
     margin: 0 auto;
-    /* background: green; */
 }
 
 .booking__img--card {
@@ -898,7 +915,6 @@ hr {
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
-    /* background: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -910,7 +926,7 @@ hr {
 }
 
 #royalty {
-    max-width: 500px;
+    width: 500px;
 }
 
 .royalty__front {
@@ -918,8 +934,6 @@ hr {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    /* background: #ffc728; */
-    /* color: #333; */
     box-shadow: var(--primary) 0px 20px 80px -10px;
 }
 
@@ -928,12 +942,31 @@ hr {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    /* background: #fafafa; */
-    /* color: #333; */
     transform: rotateY(180deg);
     box-shadow: var(--accent) 0px 20px 80px -10px;
 }
 
+@media screen and (max-width: 1000px){
+    #royalty {
+        width: 400px;
+    }
+
+    .booking__img--container {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #royalty {
+        width: 250px;
+    }
+
+    .booking__img--container {
+        width: 250px;
+        height: 50px;
+    }
+}
 
 
 
